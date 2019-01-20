@@ -1,0 +1,33 @@
+{
+  "name": "timestamp-microservice",
+  "version": "1.0.0",
+  "description": "The API endpoint is GET [project_url]/api/timestamp/:date_string , return {\"unix\": <date.getTime()>, \"utc\" : <date.toUTCString()> } ",
+  "main": "server.js",
+  "scripts": {
+    "start": "node .",
+    "test": "mocha --reporter spec test --timeout 3000 --exit "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dgifani/Timestamp-Microservice.git"
+  },
+  "keywords": [
+    "Microservice",
+    "TimeStamp"
+  ],
+  "author": "Danyal Gifany",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dgifani/Timestamp-Microservice/issues"
+  },
+  "homepage": "https://github.com/dgifani/Timestamp-Microservice#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.2.1",
+    "mocha": "^5.2.0"
+  }
+}
